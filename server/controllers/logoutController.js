@@ -3,8 +3,8 @@ export const logout = (req, res) => {
         res.cookie('token', '', {
             maxAge: 0,
             httpOnly: true,
-            sameSite: 'strict',
-            secure: process.env.NODE_ENV !== "development",
+            sameSite: 'none',
+            secure: process.env.NODE_ENV !== 'development',
             path: '/'
         });
         res.status(200).json({ message: 'Logout successfully' });

@@ -11,9 +11,6 @@ const Login = () => {
     });
 
 
-    // temp code
-    console.log('url',import.meta.env.VITE_RENDER_URL)
-
     const handleFormInput = (e) => {
         const { name, value } = e.target;
 
