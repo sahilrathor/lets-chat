@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    background: linear-gradient(#00000033, #00000033), url('./assets/bg-images/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background: white; */
+}
+
+.hovered:hover .show-hover{
+    display: flex;
+}

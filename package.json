@@ -1,0 +1,12 @@
+{
+  "name": "lets-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "client": "yarn --cwd client dev",
+    "server": "yarn --cwd server server", 
+    "build": "yarn --cwd server install && yarn install --cwd client && yarn --cwd client build",
+    "start": "yarn --cwd server start"
+  }
+}
