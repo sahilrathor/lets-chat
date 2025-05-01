@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import useLogin from "../../hooks/useLogin";
 
 const Login = () => {
-    const [pageName, setpageName] = useState("Login");
+    const [pageName] = useState("Login");
     const { login, isLoading } = useLogin();
     const [formData, setformData] = useState({
         userName: "",
@@ -66,7 +66,7 @@ const Login = () => {
                         to="/signup"
                         className="text-sm m-2 mt-4 inline-block hover:underline hover:text-sky-300"
                     >
-                        Don't have an account?
+                        {"Don't have an account?"}
                     </Link>
 
                     <button
